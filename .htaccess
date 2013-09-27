@@ -1,0 +1,18 @@
+RewriteEngine On    # Turn on the rewriting engine
+
+#allow from all
+
+#Options +Indexes 
+#Options -Indexes 
+#IndexIgnore *
+#IndexOptions +FancyIndexing
+
+
+#AuthUserFile /my_framework/.htpasswd  vijay
+#AuthType Basic
+#AuthName "Member's Area Name"
+#Require valid-user 
+
+ErrorDocument 404 /my_framework/error/404.php
+
+RewriteRule    ^index.php/([A-Za-z0-9-]+)/([A-Za-z0-9-]+)/?$    index.php?class=$1&method=$2    [NC,L]    
