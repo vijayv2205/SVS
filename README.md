@@ -1,4 +1,4 @@
-my_framework
+SVS
 ============
 
 This is a open source framework. 
