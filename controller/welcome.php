@@ -10,15 +10,8 @@ class Welcome{
 	 }
 	 function display(){
 		    $WelcomeModel = model('welcomeModel'); 
-			
-			/*$r = mysql_query('select * from state') or die('table not connect');
-			
-			while($row = mysql_fetch_array($r) ){
-			  echo $row['state_code'].'<br>';
-			}*/
-	        //echo 'Welcome';
 			$data['name'] = "Vijay";
-			$data['surname'] = "Verma22";
+			$data['surname'] = "Verma";
 			$WelcomeModel->test();
 			view('welcome',$data);
 	 }

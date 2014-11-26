@@ -12,7 +12,9 @@ if(isset($_GET['class'])){
 	load_object($class_name,$method_name);
 }
 else if(isset($config['DEFAULT_CLASS']) && $config['DEFAULT_CLASS'] != ""){
+	
 	$class_name = $config['DEFAULT_CLASS'];
+	
 	$method_name = $config['DEFAULT_METHOD'];
 	
     load_object($class_name,$method_name);
